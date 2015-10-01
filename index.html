@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Side view demo</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular-ui-router.min.js"></script>
+</head>
+<body data-ng-app="sideViewDemo">
+    <div style="width:500px;">
+        <h1>
+            <a href="#">Side bar demo</a>
+        </h1>
+        <div style="float: left;">
+            <div id="menu_items" data-ng-include="'templates/sidebar.html'"></div>
+        </div>
+        <div style="float: right;">
+            <div data-ui-view=""></div>
+        </div>
+
+        <div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/session1Controller.js"></script>
+    <script src="js/session2Controller.js"></script>
+    <script src="js/session3Controller.js"></script>
+
+</body>
+</html>
